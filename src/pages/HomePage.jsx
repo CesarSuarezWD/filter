@@ -3,7 +3,7 @@ import { usePokemon } from '../hooks/usePokemon'
 
 export const HomePage = () => {
 
-  usePokemon();
+  const { isLoading, pokemons} = usePokemon();
 
 
   return (
@@ -20,6 +20,16 @@ export const HomePage = () => {
             <th>Imagen</th>
           </tr>
         </thead>
+        <tbody>
+          {
+            
+          }
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
       </table>
       
     </div>
