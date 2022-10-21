@@ -1,0 +1,19 @@
+
+
+export interface FetchAllPokemonResponse {
+  count: number;
+  next: null;
+  previous: null;
+  results: SmallPokemon[];
+}
+
+export interface Result {
+  name: string;
+  url: string;
+}
+
+export interface Pokemon {
+  id: string;
+  name: string;
+  pic: string
+}
