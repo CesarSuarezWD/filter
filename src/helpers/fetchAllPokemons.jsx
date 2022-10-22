@@ -27,4 +27,3 @@ const transformSmallPokemonIntoList = (smallPokemonList) => {
   return pokemonArr;
 }
 
-//Queda en el minuto 23:44 https://www.youtube.com/watch?v=Q9jT1fZTV38&list=LL&index=2&t=5s
