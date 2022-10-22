@@ -4,7 +4,7 @@ export const fetchAllPokemons = async () => {
 
   const resp = await myApi.get('/pokemon?limit=1500');
   const smallPokemonList = resp.data.results;
-  transformSmallPokemonIntoList(smallPokemonList)
+  return transformSmallPokemonIntoList(smallPokemonList)
 }
 
 const transformSmallPokemonIntoList = (smallPokemonList) => {
@@ -21,6 +21,8 @@ const transformSmallPokemonIntoList = (smallPokemonList) => {
       name: poke.name,
     }
   });
+
+  // console.warn(pokemonArr);
 
   return pokemonArr;
 }
