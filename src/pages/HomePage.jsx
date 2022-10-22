@@ -17,7 +17,7 @@ export const HomePage = () => {
       return pokemons.slice(currentPage, currentPage + 5);
 
 
-    const filtered = pokemons.filter(poke => poke.name.includes(search));
+    const filtered = pokemons.filter(poke => poke.name.includes(search) || poke.id.includes(search));
     return filtered.slice(currentPage, currentPage + 5);
   }
 
